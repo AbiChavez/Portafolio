@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Abigail Donají Chávez Rubio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Acerca de mí</a></li>
+                <li><a href="#proyects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Abigail Donají Chávez Rubio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Acerca de mí</a></li>
+                <li><a href="#proyects" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./images/Foto perfil.JPG" alt="Abi ">
+        </div>
+        <div class="section_text">
+            <h1 class="title">Estudiante</h1>
+            <p class="section_text_p2">Ingeniería en Tecnologías Computacionales</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/CV.pdf')">CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Información de Contacto</button>
+            </div>
+            <div id="socials-container">
+                <img src="./images/linkedin.png" alt="Mi LinkedIn" clss="icon"
+                    onclick="location.href='https://www.linkedin.com/in/abigail-chavez-rubio-389405272/'">
+                <img src="./images/github.png" alt="Mi Github" clss="icon"
+                    onclick="location.href='https://github.com/AbiChavez'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Más sobre mí</p>
+        <p class="title">Acerca de mí</p>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <!-- <img src="./images/progra.jpg" alt="Profile picture" class="about-pic" /> -->
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>Educación</h3>
+                        <p>Instituto Tecnológicp y de Estudios Superiores de Monterrey</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Me apasionala programación, soy responsable, trabajadora y resiliente</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Busca por mis recientes</p>
+        <h1 class="title">Proyectos</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/p1.png">
+                </div>
+                <h2 class="experience-sub-title project title">Proyecto 1 - Comer & Compartir</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onClick="location.href=''">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/p2.png">
+                </div>
+                <h2 class="experience-sub-title project title">Proyecto 2 - Crack the Code</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onClick="location.href=''">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/p3.png">
+                </div>
+                <h2 class="experience-sub-title project title">Proyecto 3 - Sistemas MultiAgentes</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/Ingrid-Garcia/SistemasMultiagentes.git'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="title">Contacto</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./images/telefono.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p>5559959076</p>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
